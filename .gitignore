@@ -1,40 +1,17 @@
-# Autosave files
+# MATLAB autosave and backup files
 *.asv
-*.m~
 *.autosave
-*.slx.r*
-*.mdl.r*
 
-# Derived content-obscured files
+# MATLAB generated files
+*.slxc
+*.mex*
 *.p
 
-# Compiled MEX files
-*.mex*
+# macOS
+.DS_Store
 
-# Packaged app and toolbox files
-*.mlappinstall
-*.mltbx
+# Windows
+Thumbs.db
 
-# Deployable archives
-*.ctf
-
-# Generated helpsearch folders
-helpsearch*/
-
-# Code generation folders
-slprj/
-sccprj/
-codegen/
-
-# Cache files
-*.slxc
-
-# Cloud based storage dotfile
-.MATLABDriveTag
-
-# buildtool cache folder
-.buildtool/
-
-# SimBiology backup files
-*.sbproj.backup
-*.sbproj.bak
+# Temporary files
+*.tmp

@@ -1,130 +1,257 @@
-# Industrial AI Predictive Maintenance System 🤖🏭
+# 🤖 Industrial AI Predictive Maintenance System
 
-## Overview
+![MATLAB](https://img.shields.io/badge/MATLAB-App%20Designer-orange)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-blue)
+![AI](https://img.shields.io/badge/AI-Predictive%20Maintenance-green)
 
-This project develops an Artificial Intelligence-based predictive maintenance system using Machine Learning to predict industrial machine failures from sensor data.
+## 📌 Project Overview
 
-The goal is to reduce unexpected equipment downtime by identifying failure patterns before they occur.
+The **Industrial AI Predictive Maintenance System** is an Artificial Intelligence based solution designed to predict machine failures before they occur using industrial sensor data.
 
-The project demonstrates the application of AI, Data Science, MATLAB, and Industrial Automation concepts to solve real-world engineering problems.
+The project uses Machine Learning algorithms to analyse machine operating conditions and classify whether a machine is operating normally or is at risk of failure.
 
----
+A complete MATLAB-based application was developed using **MATLAB App Designer**, allowing users to enter machine sensor measurements and receive an AI-powered maintenance prediction through an interactive dashboard.
 
-## Project Objectives
+This project demonstrates the integration of:
 
-- Analyze industrial machine sensor data
-- Identify factors contributing to equipment failure
-- Train machine learning models for failure prediction
-- Evaluate model performance using industry-standard metrics
-- Develop an AI solution applicable to smart factories and Industry 4.0 environments
+- Industrial IoT concepts
+- Machine Learning
+- Data Analysis
+- Artificial Intelligence
+- Software Application Development
 
----
-
-## Technologies Used
-
-| Technology | Purpose |
-|---|---|
-| MATLAB | Data analysis and machine learning development |
-| Statistics and Machine Learning Toolbox | Model training and evaluation |
-| Git & GitHub | Version control and project management |
-| Machine Learning | Predictive maintenance modelling |
 
 ---
 
-# Project Workflow
+# 🚀 Key Features
+
+✅ AI-based machine failure prediction
+
+✅ MATLAB App Designer predictive maintenance dashboard
+
+✅ Real-time sensor data input simulation
+
+✅ Random Forest machine learning model deployment
+
+✅ Failure probability estimation
+
+✅ Sensor correlation analysis
+
+✅ Feature importance analysis
+
+✅ Multiple machine learning models evaluated
+
 
 ---
 
-# Phase 1: Exploratory Data Analysis
+# 🏗️ System Architecture
 
-Dataset:
+```
+Industrial Sensor Data
+          |
+          ↓
+Data Processing & Analysis
+          |
+          ↓
+Machine Learning Models
+          |
+          ↓
+Random Forest Model Selection
+          |
+          ↓
+MATLAB App Designer Dashboard
+          |
+          ↓
+Machine Health Prediction
+```
 
-AI4I 2020 Predictive Maintenance Dataset
 
-The dataset contains industrial machine measurements including:
+---
 
-- Air temperature
-- Process temperature
-- Rotational speed
+# 🖥️ MATLAB Predictive Maintenance Application
+
+A user-friendly dashboard was created using **MATLAB App Designer**.
+
+The application allows users to enter:
+
+- Air Temperature (K)
+- Process Temperature (K)
+- Rotational Speed (rpm)
+- Torque (Nm)
+- Tool Wear (min)
+
+
+The trained AI model processes the input data and provides:
+
+- Machine health status
+- Failure prediction
+- Failure probability estimation
+
+
+Application interface:
+
+```
+Industrial AI Predictive Maintenance
+
+Air Temperature        [     ]
+
+Process Temperature    [     ]
+
+Rotational Speed       [     ]
+
+Torque                 [     ]
+
+Tool Wear              [     ]
+
+
+        [ Predict Failure ]
+
+
+Prediction:
+Machine Status
+Failure Probability
+```
+
+
+---
+
+# 🧠 Machine Learning Models Developed
+
+Three different AI models were trained and evaluated:
+
+| Model | Accuracy |
+|---|---:|
+| Decision Tree | 97.93% |
+| Random Forest | 98.73% |
+| Artificial Neural Network | 97.70% |
+
+
+The **Random Forest model** was selected for deployment because it achieved the highest accuracy and provided strong classification performance.
+
+
+---
+
+# 📊 Random Forest Model Performance
+
+## Evaluation Results
+
+**Accuracy:** 98.73%
+
+**Precision:** 87.06%
+
+**Recall:** 73.27%
+
+**F1 Score:** 79.57%
+
+
+### Confusion Matrix
+
+```
+              Predicted
+
+              0       1
+
+Actual 0     2888    11
+
+Actual 1       27    74
+```
+
+
+---
+
+# 🔍 Feature Importance Analysis
+
+The model was analysed to understand which machine parameters contribute most to failure prediction.
+
+![Random Forest Feature Importance](images/random_forest_feature_importance.png)
+
+
+Important machine factors include:
+
+- Tool Wear
 - Torque
-- Tool wear
-- Machine failure status
+- Rotational Speed
+- Temperature conditions
 
-During this phase:
-
-✔ Dataset loading  
-✔ Data cleaning  
-✔ Feature exploration  
-✔ Data visualization  
-✔ Failure distribution analysis  
 
 ---
 
-# Phase 2: Decision Tree Machine Learning Model 🌳
+# 🛠️ Technologies Used
 
-A Decision Tree classifier was developed to predict whether a machine will experience failure.
+## Programming & Development
 
-## Model Performance
+- MATLAB
+- MATLAB App Designer
+- Git & GitHub
 
-Accuracy:
 
-**97.93%**
+## Artificial Intelligence
 
-Confusion Matrix Results:
+- Machine Learning Toolbox
+- Deep Learning Toolbox
+- Random Forest Classification
+- Decision Tree Classification
+- Artificial Neural Network
 
-| | Predicted Normal | Predicted Failure |
-|-|-|-|
-| Actual Normal | 2867 | 32 |
-| Actual Failure | 30 | 71 |
 
-The model successfully identified machine failures while maintaining a low false alarm rate.
+## Industrial Engineering Concepts
 
----
+- Predictive Maintenance
+- Condition Monitoring
+- Industrial Sensor Analysis
+- Machine Health Prediction
 
-# Engineering Applications
-
-This AI system can be applied in:
-
-- Manufacturing plants
-- Smart factories
-- Industrial automation systems
-- Robotics maintenance
-- Equipment monitoring systems
-- Industry 4.0 applications
 
 ---
 
-# Future Development Roadmap 🚀
+# 📂 Project Structure
 
-## Machine Learning Improvements
+```
+Industrial-AI-Predictive-Maintenance/
 
-- [ ] Random Forest model
-- [ ] Support Vector Machine model
-- [ ] Neural Network model
-- [ ] Model comparison and optimization
+│
+├── app/
+│   └── PredictiveMaintenanceDashboard_v2.mlapp
+│
+├── models/
+│   └── randomForestModel.mat
+│
+├── images/
+│   └── random_forest_feature_importance.png
+│
+├── data/
+│   └── ai4i2020.csv
+│
+└── README.md
+```
 
-## Computer Vision
-
-- [ ] Factory defect detection
-- [ ] Surface inspection using cameras
-- [ ] AI quality control system
-
-## Embedded Systems & IoT
-
-- [ ] ESP32 sensor integration
-- [ ] Real-time sensor monitoring
-- [ ] AI edge deployment
-
-## Autonomous Systems
-
-- [ ] Computer vision perception
-- [ ] Autonomous navigation concepts
-- [ ] Robotics integration
 
 ---
 
-# Author
+# 📈 Future Improvements
 
-Romeo Mtsweni
+Future development plans include:
 
-Industrial AI | Machine Learning | Embedded Systems | Automation Engineering
+- Integration with real IoT sensors
+- Live machine monitoring
+- Cloud-based data storage
+- Edge AI deployment
+- Automated maintenance recommendations
+- Integration with PLC/SCADA systems
+
+
+---
+
+# 👨‍💻 Author
+
+**Vusimuzi Romeo Mtsweni**
+
+Industrial AI | Automation | Embedded Systems | Machine Learning
+
+GitHub:
+https://github.com/VUSI123
+
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository.
